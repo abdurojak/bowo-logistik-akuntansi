@@ -1,0 +1,1 @@
+import{d as t,r as a,x as s,y as n,z as o,A as r,N as c}from"./sZQ7zPju.js";const l={class:"flex justify-center text-7xl font-bold dark:text-amber-500 text-blue-950 mb-4"},f=t({__name:"index",setup(d){const e=a("Selamat Datang");return(i,m)=>(n(),s("div",null,[o("div",l,r(c(e)),1)]))}});export{f as default};
