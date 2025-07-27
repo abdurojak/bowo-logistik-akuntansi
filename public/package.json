@@ -1,35 +1,24 @@
 {
-  "name": "akuntansi",
-  "version": "1.0.0",
-  "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "build": "electron-builder"
-  },
-  "build": {
-    "appId": "com.example.myapp",
-    "productName": "Difa Akuntansi",
-    "directories": {
-      "output": "dist"
-    },
-    "files": [
-      "main.js",
-      "frontend/**/*",
-      "package.json"
-    ],
-    "win": {
-      "target": "nsis",
-      "icon": "ico.png"
-    }
-  },
-  "devDependencies": {
-    "electron": "^28.0.0",
-    "electron-builder": "^24.13.3"
+    "dev": "nodemon server.js",
+    "build": "ncc build app.js -o dist"
   },
   "dependencies": {
-    "dotenv": "^16.5.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "sqlite3": "^5.1.7"
+    "express-validator": "^7.2.1",
+    "html-pdf-node": "^1.0.8",
+    "jsonwebtoken": "^9.0.2",
+    "puppeteer": "^24.11.1",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
-  "packageManager": "pnpm@8.15.1+sha1.8adba2d20330c02d3856e18c4eb3819d1d3ca6aa"
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
